@@ -16,9 +16,8 @@ public class RichWord {
 		this.correct = correct;
 	}
 	
-	public RichWord(RichWord w) {
-		this.word = w.word;
-		this.correct = w.correct;
+	public RichWord(String w) {
+		this.word = w;
 	}
 
 	public String getWord() {

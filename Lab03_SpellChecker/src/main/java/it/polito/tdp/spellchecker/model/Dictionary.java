@@ -49,9 +49,13 @@ public class Dictionary {
 			
 			RichWord richword = new RichWord(parola);
 			
-			if(dictionary.contains(parola)) {
-				
+			if(dictionary.contains(parola.toLowerCase())) {
+				richword.setCorrect(true);
+				}
+			else {
+				richword.setCorrect(false);
 			}
+			
 		}
 			
 				
