@@ -56,8 +56,10 @@ public class Dictionary {
 				richword.setCorrect(false);
 			}
 			
+			ltemp.add(richword);
 		}
-			
+		
+		return ltemp;	
 				
 	}
 
