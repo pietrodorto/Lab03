@@ -11,5 +11,9 @@ public class Dictionary {
 		this.word = word;
 	}
 	
+	public loadDictionary(String Language) {
+		
+	}
+	
 
 }

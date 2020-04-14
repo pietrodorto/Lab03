@@ -4,38 +4,42 @@
 
 package it.polito.tdp.spellchecker;
 
-import java.awt.event.ActionEvent;
 
+
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
-import javafx.scene.text.Text;
 
 public class FXMLController {
 
     @FXML
-    private ChoiceBox<?> btnChoice;
+    private ComboBox<?> boxLingua;
 
     @FXML
-    private TextArea txtnput;
+    private TextArea txtDaCorreggere;
 
     @FXML
-    private Button btnCheck;
+    private Button spellCheckButton;
 
     @FXML
-    private TextArea txtWrongWords;
+    private TextArea txtCorretto;
 
     @FXML
-    private Text txtCountErrors;
+    private Label lblErrori;
 
     @FXML
-    private Button btnClear;
+    private Button clearTextButton;
 
     @FXML
-    private Text txtTimeCheck;
-    
-    
+    private Label lblStato;
+
+    @FXML
+    void doActivation(ActionEvent event) {
+
+    }
 
     @FXML
     void doClearText(ActionEvent event) {
@@ -48,5 +52,3 @@ public class FXMLController {
     }
 
 }
-
-
